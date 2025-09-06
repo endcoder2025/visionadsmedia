@@ -1,0 +1,7 @@
+﻿services:
+  - type: web
+    name: visionadsmedia
+    env: dotnet
+    buildCommand: "dotnet publish -c Release -o out"
+    startCommand: "dotnet out/visionadsmedia.dll"
+    plan: free
